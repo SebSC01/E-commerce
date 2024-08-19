@@ -1,0 +1,30 @@
+.breadcrumb {
+    position: absolute; /* Posiciona el Breadcrumb en relación a su contenedor */
+    top: 10px; /* Ajusta según la altura deseada */
+    left: 10px; /* Ajusta según la distancia desde la izquierda */
+    font-size: 14px; /* Tamaño del texto */
+    
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        gap: 8px;
+    }
+
+    li {
+        &:not(:last-child)::after {
+            content: ">";
+            margin: 0 8px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #0070f3;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

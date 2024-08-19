@@ -1,0 +1,152 @@
+.container {
+    padding: 20px;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px; /* Tamaño del texto del título reducido */
+}
+
+.productGrid {
+    display: flex;
+    align-items: flex-start; /* Alinea el primer producto y los otros productos en la parte superior */
+    gap: 16px; /* Espacio entre el primer producto y los otros productos */
+}
+
+.featuredProduct {
+    width: 400px; /* Tamaño aumentado del producto destacado */
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: left; /* Alinea el contenido del producto destacado a la izquierda */
+    flex-shrink: 0; /* Asegura que el tamaño no se reduzca */
+    position: relative; /* Necesario para posicionar el aviso de descuento */
+}
+
+.featuredImage {
+    width: 100%;
+    border-radius: 8px;
+    max-height: 250px; /* Ajusta según el tamaño deseado */
+    object-fit: contain;
+}
+
+.addToCartButton {
+    display: inline-flex;
+    align-items: center;
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 16px; /* Tamaño del texto del botón */
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 16px;
+    transition: background-color 0.3s;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    text-align: center; /* Centra el texto dentro del botón */
+
+    &:hover {
+        background-color: #cc5200;
+    }
+
+    .cartIcon {
+        margin-right: 8px;
+        font-size: 20px; /* Tamaño del ícono del carrito */
+    }
+}
+
+.otherProducts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 16px; /* Espacio arriba para separar del producto destacado */
+}
+
+.productCard {
+    width: 150px; /* Reducido para ajustar en pantalla */
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: left; /* Alinea todo el contenido del producto a la izquierda */
+    font-size: 12px; /* Tamaño del texto reducido */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.productImage {
+    width: 100%;
+    max-height: 100px; /* Ajusta el tamaño de la imagen según sea necesario */
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.productName {
+    height: 36px; /* Altura fija para el nombre del producto */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Número máximo de líneas */
+    -webkit-box-orient: vertical;
+    font-size: 14px; /* Tamaño del texto del nombre */
+    margin-bottom: 8px; /* Espacio inferior */
+    text-align: left; /* Alinea el nombre del producto a la izquierda */
+}
+
+.imageContainer {
+    position: relative;
+}
+
+.discountBadge {
+    position: absolute;
+    top: 10px;
+    left: 10px; /* Cambié right a left para que esté en la esquina superior izquierda */
+    background-color: rgb(242, 255, 62); /* Color de fondo del aviso de descuento */
+    color: rgb(0, 0, 0); /* Color del texto del aviso de descuento */
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom-right-radius: 5px;
+}
+
+.stars {
+    display: flex;
+    align-items: center;
+    text-align: left; /* Alinea las estrellas a la izquierda */
+}
+
+.star {
+    font-size: 1.5rem; /* Ajusta el tamaño de las estrellas según sea necesario */
+    margin-right: 2px;
+}
+
+.filled {
+    color: yellow; /* Color de las estrellas llenas */
+}
+
+.empty {
+    color: #e0e0e0; /* Color de las estrellas vacías (gris claro) */
+}
+
+.featuredPrice {
+    font-size: 18px; /* Tamaño del texto del precio */
+    color: #333; /* Color del precio con descuento */
+    margin-bottom: 8px; /* Espacio inferior */
+    text-align: left; /* Alinea el precio a la izquierda */
+}
+
+.originalPrice {
+    font-size: 16px; /* Tamaño del texto del precio original */
+    color: #888; /* Color gris para el precio original */
+    text-decoration: line-through; /* Línea a través del precio original */
+    margin-right: 8px; /* Espacio a la derecha del precio original */
+    text-align: left; /* Alinea el precio original a la izquierda */
+}
+
+.discountedPrice {
+    font-size: 18px; /* Tamaño del texto del precio con descuento */
+    color: blue; /* Color azul para el precio con descuento */
+    text-align: left; /* Alinea el precio con descuento a la izquierda */
+}

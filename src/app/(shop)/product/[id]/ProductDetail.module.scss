@@ -1,0 +1,133 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contentWrapper {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.imageContainer {
+    flex: 0 0 auto;
+    margin-right: 30px; /* Separación de la imagen */
+    width: 300px; /* Tamaño fijo para el contenedor de la imagen */
+    height: 300px; /* Tamaño fijo para el contenedor de la imagen */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Oculta cualquier parte de la imagen que se desborde */
+}
+
+.productImage {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ajusta la imagen para que se vea completa sin distorsionar */
+    margin-top: 20px;
+}
+
+.detailsContainer {
+    flex: 1;
+    max-width: 600px;
+    margin: 30px;
+    margin-left: 20%; /* Aumenta el margen izquierdo para centrar la información */
+}
+
+.productRating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.stars {
+    display: flex;
+    margin-right: 10px;
+}
+
+.star {
+    font-size: 20px;
+    color: #f5c518; /* Color dorado para estrellas llenas */
+}
+
+.empty {
+    color: #ddd; /* Color gris para estrellas vacías */
+}
+
+.ratingText {
+    font-size: 16px;
+}
+
+.productTitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.productPrice {
+    font-size: 18px;
+    color: #333; /* Color del precio */
+    margin: 5px 0;
+}
+
+.productDiscount {
+    font-size: 18px;
+    color: #888; /* Color gris para el precio tachado */
+    text-decoration: line-through;
+    margin-right: 10px;
+}
+
+.discountedPrice {
+    font-size: 18px;
+    color: blue; /* Color azul para el precio con descuento */
+}
+
+.discountText {
+    font-size: 16px;
+    color: green; /* Color verde para el texto del porcentaje de descuento */
+    margin-left: 10px;
+}
+
+.addToCartButton {
+    display: flex;
+    align-items: center;
+    background-color: #ff6600; /* Color de fondo para el botón */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.cartIcon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.descriptionContainer {
+    text-align: center;
+    width: 100%;
+}
+
+.descriptionTitle {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.descriptionSummary {
+    font-size: 16px;
+    margin-top: 0;
+    white-space: pre-line;
+}
